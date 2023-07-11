@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/back"
+    android:background="@color/green_9"
+    tools:context=".Abuelo">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tituloc1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="El abuelo de Daniel"
+            android:paddingLeft="100sp"
+            android:paddingTop="5sp"
+            android:paddingBottom="5sp"
+            android:textColor="#050505"
+            android:textSize="24sp"
+            android:textStyle="bold">
+        </TextView>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:background="@drawable/abuelo"
+            android:layout_gravity="center_horizontal">
+        </ImageView>
+
+        <ScrollView
+            android:layout_width="393dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginRight="10sp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/historia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="casual"
+                    android:text="@string/El_abuelo_de_Daniel"
+                    android:textColor="#070707"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="98dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/aumentar"
+                android:layout_width="114dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:onClick="Aumentar"
+                android:text="+A" />
+
+            <ImageButton
+                android:id="@+id/inicio"
+                android:layout_width="59dp"
+                android:layout_height="71dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:layout_weight="1"
+                android:background="@drawable/inicio"
+                android:onClick="Inicio" />
+
+            <Button
+                android:id="@+id/disminuir"
+                android:layout_width="114dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:onClick="Descender"
+                android:text="-A" />
+            <Switch
+                android:id="@+id/switchTema"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="16dp"
+                android:checked="false"
+                android:onClick="Aumentar"
+                android:thumbTint="@color/white"
+                android:trackTint="@color/switch_track_color" />Í
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
